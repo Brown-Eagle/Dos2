@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+            <style>
+                    .it {
+                        position: relative;
+                    }
+                    .app1 {
+                        position: relative;
+                    }
+                    </style>
+        <script src="javascripts/terminal.js"></script>
+        <script src="javascripts/demotime.js"></script>
+        <script src="javascripts/power.js"></script>
+        <script src="javascripts/appclick.js"></script>
+	<link rel="shortcut icon" href="images/logo.bmp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>DEMO!</title>
+            
+
+  
+        </head> 
+        <a href="index.html"><button>Go back</button></a>supports only MOZILLA FIREFOX!!
+<body onload="startTime();app_clear();option_clear();console_des();" style="background-color:#616161;">
+<center>
+<div class="container" style="height:fixed;width:50%;background-color:#424242;">
+    <div align="center" id="time"></div>
+    <div align="right">
+            
+        <img align= "left" src="images/options.png" width="36" heigth="36" id="img" onclick="options();">
+        <img align= "left" src="images/power.png" width="36" heigth="36" id="img" onclick="power();">
+        
+    </br>
+        <select align= "right"  title="apps" id="s0">
+                <option value="0" onclick="app_clear()">Apps</option>
+                <option value="2" onclick="app_click('calc')">Calculator</option>
+                <option value="4" onclick="app_click('game')">Dos2 Jumping</option>
+                <option value="5" onclick="app_click('internet')">Internet</option>
+                <option value="6" onclick="app_click('slide')">Dos2 Pictures</option>
+                <option value="7" onclick="app_click('file')">File Explorer</option>
+                <option value="8" onclick="app_click('youtube')">youtube</option>
+                <option value="9" onclick="app_click('change')">Change Log</option>
+                <option value="10" onclick="app_click('about')">About</option>
+        </select>
+            
+    </div>
+</div>
+</center>
+
+
+            <center>
+            
+                <div id="it" style="background-color:#424242;width:50%;"></div>
+                <div id="console1" style="background-color:black; width:50%;"></div>
+                <div id="console0" style="background-color:black; width:50%;"></div>
+            </center>
+            <br>
+            <div id="app1" align="center">
+            <iframe id="app_show" style="width:50%;background-color:#424242;" height="500" frameborder="0"></iframe>
+            
+            </div>
+
+	</body>
+</html>

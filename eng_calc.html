@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Calculator</title>
+<script language="javascript">
+    function calc(type)
+    {
+        var x =parseInt(document.getElementById("x").value);
+        var y =parseInt(document.getElementById("y").value);
+        var z =parseInt(document.getElementById("z").value);
+
+        
+        if (type == 'add'){
+            add (x , y)    }     
+        
+        if (type == 'min'){
+            min (x , y)    }
+       
+        if (type == 'mul'){
+            mul (x , y)}
+   
+        if (type == 'div'){
+            div (x , y)}
+        
+        if (type == 'sqrt'){
+            sqrt (z)}
+            
+        if (type == 'five'){
+            five (z)}
+            
+        if (type == 'morp'){
+            morp (z)}
+
+        if (type == 'pi'){
+            var pie = Math.PI;
+            window.alert(pie)
+        }
+
+    
+    
+        
+    function add(x , y) {
+        alert(x + y);
+            }
+
+    function min(x , y) {
+        alert(x - y);
+            }
+
+    function mul(x , y) {
+        alert(x * y);
+            }
+
+    function div(x , y) {
+        alert(x / y);
+            }
+    
+    function sqrt(z) {
+        alert(Math.sqrt(z))
+            }
+            
+    function five(z) {
+        alert(1/z)
+            }
+
+    function morp(z) {
+        alert(z*-1)
+            }
+    }
+</script>
+
+<script>
+    function power(type){
+        var p =parseInt(document.getElementById("p").value);
+        var o =parseInt(document.getElementById("o").value);
+        
+        
+            if(type == 'powerr'){
+                powerr (p)
+            }
+            
+            
+        function powerr(p)  {
+            alert(Math.pow(p, o))
+        }  
+    }
+
+</script>
+</head>
+
+<body bgcolor="#424242">
+<center><h1>Calculator</h1></center>
+<center>
+First Number:
+<input type="text" id="x" >
+<br>
+Second Number:
+<input type="text" id="y" >
+</center>
+<br>
+<center>
+<input style="width:30;height:30;" type="button" onclick="calc('add')" value="+">
+&nbsp;
+<input style="width:30;height:30;" type="button" onclick="calc('min')" value="-">
+&nbsp;
+<input style="width:30;height:30;" type="button" onclick="calc('mul')" value="*">
+&nbsp;
+<input style="width:30;height:30;" type="button" onclick="calc('div')" value="/">
+
+<br>
+<br>
+<br>
+<br>
+Single Number operations:
+<br>
+<input type="text" id="z">
+<br>
+
+&nbsp;
+<button style="width:34;height:34;" onclick="calc('sqrt')">Sqrt</button>
+&nbsp;
+<button style="width:34;height:34;" onclick="calc('five')">1/x</button>
+&nbsp;
+<button style="width:34;height:34;" onclick="calc('morp')">-/+</button>
+&nbsp;
+<button style="width:34;height:34;" onclick="calc('pi')">π</button>
+</center>
+<center>
+<br>
+<br>
+<br>
+<br>
+Number:&nbsp;Power:
+<br>
+<input style="width:34;" type="text" id="p" >
+&nbsp;
+<input style="width:34;" type="text" id="o" >
+<br>
+<button onclick="power('powerr')">X<sup>y</sup></button>
+</center>
+</body>
+
+</html>

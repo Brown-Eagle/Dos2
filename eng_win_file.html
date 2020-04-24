@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+        <script>
+            function drivec(){
+                document.getElementById('frame0').src='file:///c:/'
+            }
+            function drived(){
+                document.getElementById('frame0').src='file:///d:/'
+            }
+            function drivee(){
+                document.getElementById('frame0').src='file:///e:/'
+            }
+            function drivef(){
+                document.getElementById('frame0').src='file:///f:/'
+            }
+			function linux(){
+				document.getElementById('frame0').src='file:///home/'
+			}
+        </script>
+<link rel="shortcut icon" href="images/logo.bmp"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+							<link href="styles\style.css" rel="stylesheet" type="text/css">
+							<link href="styles\a+v_player.css" rel="stylesheet" type="text/css">
+
+	<title>
+		Audio Player
+		</title>
+</head>
+
+<body style="background-color:#424242;">
+
+
+<!--
+<div align="center">
+ <audio controls>
+  <source src="audios/audio.mp3" type="audio/mpeg">
+  <source src="horse.ogg" type="audio/ogg">
+</audio> 
+</div>
+-->
+
+
+    </br>
+<center>
+        <iframe id="frame0" width="500" height="300"></iframe>
+</center>
+
+                <center>
+                    Select drive:<br>
+                    <button onclick="drivec()">From Drive C:</button>
+                    <button onclick="drived()">From Drive D:</button>
+                   <button onclick="drivee()">From Drive E:</button>
+                   <button onclick="drivef()">From Drive F:</button>
+                   </br>
+                   <button onclick="linux()">/home (for linux)</button>
+                </center>
+        
+
+</body>
+</html>
